@@ -1,0 +1,32 @@
+<!-- VALIDATING HTML FORM ELEMENTS USING JAVASCRIPT. -->
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+
+<title>JavaScript Validation</title>
+
+<p>Please input a number between 1 and 10:</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let x = document.getElementById("numb").value;
+
+  let text;
+  if (isNaN(x) || x < 1 || x > 10) {
+    text = "Input:Not Valid";
+  } else {
+    text = "Input:OK";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+</head>
+</body>
+</html> 
