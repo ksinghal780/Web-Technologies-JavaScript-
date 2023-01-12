@@ -1,0 +1,62 @@
+<!-- 
+Create a form having number of elements (Textboxes, Radio buttons, Checkboxes, andso on). 
+Write JavaScript code to count the number of elements in a form.
+ -->
+ <html>
+<head>
+    <title>Registration Form</title>
+    <script type = "text/javascript">
+        function display()
+        {
+            alert(document.getElementById("form1").length);
+        }
+    </script>
+    </head>
+    <body onload = "display()">
+        <form id = "form1">
+            <table border = "1">
+                <tr>
+                    <td>Name</td>
+                    <td><input type = "text" value = "firstname" /></td>
+                </tr>
+                <tr>
+                    <td>Choose Your Username</td>
+                    <td><input type = "text" value = "Username" /></td>
+                </tr>
+                <tr>
+                    <td>Create Password</td>
+                    <td><input type = "password" value = "password" /></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password</td>
+                    <td><input type = "password" value = "confirmPass"></td>
+                </tr>
+                <tr>
+                    <td>Birthday</td>
+                    <td><select name = "date"><option value = "7" >11</td>
+                    <td><select name = "month"><option value = "November">November</td>
+                    <td><select name = "year"><option value = "1991">1991</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><input type = "radio" name = "gender"/>Male</td>
+                    <td><input type = "radio" name = "gender"/>Female</td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td><input type = "text" ></td>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td><input type = "text"></td>
+                </tr>
+                <tr>
+                    <td><input type = "checkbox" /> I agree the terms and policy</td>
+                </tr>
+                <tr>
+                    <td><input type = "button" value = "create" /></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+    </html>
